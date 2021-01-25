@@ -1,6 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button, Typography } from "@material-ui/core";
+import { Button, Typography, useMediaQuery } from "@material-ui/core";
+import { Link } from "react-scroll";
+
+import Modal from "../components/Modal";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -15,6 +18,13 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "space-around",
         alignItems: "center",
         height: "90vh",
+        [theme.breakpoints.down("lg")]: {
+            width: "80%",
+        },
+        [theme.breakpoints.down("md")]: {
+            width: "100%",
+            height: "100%",
+        },
     },
     logo: {
         display: "flex",
@@ -25,10 +35,19 @@ const useStyles = makeStyles((theme) => ({
     logoImg: {
         width: "25%",
         height: "15%",
+        [theme.breakpoints.down("md")]: {
+            display: "none",
+        },
+    },
+    logoImgMob: {
+        width: "25%",
     },
     mainImg: {
         height: "90vh",
         borderRadius: "5px",
+        [theme.breakpoints.down("md")]: {
+            display: "none",
+        },
     },
     secondaryImg: {
         position: "absolute",
@@ -36,11 +55,20 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: "-25%",
         width: 450,
         height: 350,
+        [theme.breakpoints.down("md")]: {
+            display: "none",
+        },
+        [theme.breakpoints.down("lg")]: {
+            marginLeft: "-33%",
+        },
     },
     secondaryImgContainer: {},
     logoText: {
         marginTop: "10%",
         marginLeft: "5%",
+        [theme.breakpoints.down("md")]: {
+            marginTop: 0,
+        },
     },
     text: {
         fontFamily: "Bodoni Moda",
@@ -57,6 +85,17 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "flex-end",
         marginTop: "1%",
+        [theme.breakpoints.down("md")]: {
+            display: "none",
+        },
+    },
+    contactInfoMob: {
+        display: "flex",
+        justifyContent: "space-around",
+        alignItems: "center",
+        [theme.breakpoints.up("md")]: {
+            display: "none",
+        },
     },
     contact: {
         display: "flex",
@@ -70,11 +109,18 @@ const useStyles = makeStyles((theme) => ({
     number: {
         color: "white",
     },
+    numberMob: {
+        color: "black",
+        fontSize: 15,
+    },
     btnWrapper: {
         display: "flex",
         alignItems: "center",
+
+        // justifyContent: "space-between",
     },
     btnMain: {
+        marginLeft: "5%",
         backgroundColor: "black",
         borderColor: "black",
         border: "1px solid",
@@ -85,11 +131,11 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "Bodoni Moda",
         borderRadius: "20px",
         padding: "0% 7%",
-        marginTop: "5%",
-        "&:hover": {
-            backgroundColor: "transparent",
-            color: "black",
-        },
+        marginTop: "10px",
+        // "&:hover": {
+        //     backgroundColor: "transparent",
+        //     color: "black",
+        // },
     },
     btnSecondary: {
         backgroundColor: "#B66D31",
@@ -103,19 +149,44 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: "20px",
         padding: "0% 7%",
         marginTop: "5%",
-        "&:hover": {
-            backgroundColor: "white",
-            color: "black",
-        },
+        // "&:hover": {
+        //     backgroundColor: "white",
+        //     color: "black",
+        // },
     },
     mainInfo: {
-        height: 500,
-        width: 550,
+        height: 450,
+        width: 500,
         background: "#B48D6E",
         position: "absolute",
         marginTop: "-5%",
-        marginLeft: "-5%",
+        marginLeft: "-3%",
         borderRadius: "5px",
+        [theme.breakpoints.down("md")]: {
+            display: "none",
+        },
+    },
+    btnWhite: {
+        color: "white",
+        // "&:hover": {
+        //     backgroundColor: "white",
+        //     color: "black",
+        // },
+    },
+    info: {
+        margin: "15% 20%",
+    },
+    textInfo: {
+        fontFamily: "Bodoni Moda",
+        fontStyle: "bold",
+        fontSize: 25,
+        opacity: 0.8,
+    },
+    // textInfoHeading: {
+    //     opacity: 0.8,
+    // },
+    hr: {
+        border: "1px solid #EEE8AA",
     },
 }));
 
@@ -130,8 +201,31 @@ export default function ButtonAppBar() {
                         src='../static/logo_transparent.png'
                         className={classes.logoImg}
                     />
+                    <div className={classes.contactInfoMob}>
+                        <img
+                            src='../static/logo_transparent.png'
+                            className={classes.logoImgMob}
+                        />
+                        <div className={classes.contact}>
+                            <Typography
+                                variant='h5'
+                                className={classes.numberMob}
+                            >
+                                8 (903) 898-09-06
+                            </Typography>
+                            {/* <Button className={classes.btnMain}>
+                                <Typography
+                                    className={classes.textBtn}
+                                    variant='subtitle2'
+                                >
+                                    Связаться с нами
+                                </Typography>
+                                {/* Связаться с нами */}
+                            {/* </Button> */}
+                        </div>
+                    </div>
                     <div className={classes.logoText}>
-                        <Typography className={classes.text} variant='h2'>
+                        <Typography className={classes.text} variant='h3'>
                             СТОЛЯРНАЯ МАСТЕРСКАЯ ЛЕСТНИЦА ПЛЮС
                         </Typography>
                         <Typography
@@ -142,27 +236,28 @@ export default function ButtonAppBar() {
                             Качественные лестницы за честные деньги
                         </Typography>
                         <div className={classes.btnWrapper}>
-                            <Button
-                                className={classes.btnSecondary}
-                                style={{ marginRight: "5%" }}
+                            <Modal
+                                title={"Получить консультацию"}
+                                style={{
+                                    backgroundColor: "#B66D31",
+                                }}
+                            />
+                            <Link
+                                to='portfolio'
+                                smooth={true}
+                                duration={1000}
+                                className={classes.btnMain}
                             >
-                                <Typography
-                                    className={classes.textBtn}
-                                    variant='subtitle2'
-                                >
-                                    Получить консультацию
-                                </Typography>
-                                {/* Связаться с нами */}
-                            </Button>
-                            <Button className={classes.btnMain}>
-                                <Typography
-                                    className={classes.textBtn}
-                                    variant='subtitle2'
-                                >
-                                    Портфолио
-                                </Typography>
-                                {/* Связаться с нами */}
-                            </Button>
+                                <Button className={classes.btnWhite}>
+                                    <Typography
+                                        className={classes.textBtn}
+                                        variant='subtitle2'
+                                    >
+                                        Портфолио
+                                    </Typography>
+                                    {/* Связаться с нами */}
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -172,7 +267,14 @@ export default function ButtonAppBar() {
                             <Typography variant='h5' className={classes.number}>
                                 8 (903) 898-09-06
                             </Typography>
-                            <Button className={classes.btnMain}>
+                            <Modal
+                                title={"Связаться с нами"}
+                                style={{
+                                    backgroundColor: "black",
+                                }}
+                            />
+
+                            {/* <Button className={classes.btnMain}>
                                 <Typography
                                     className={classes.textBtn}
                                     variant='subtitle2'
@@ -180,14 +282,39 @@ export default function ButtonAppBar() {
                                     Связаться с нами
                                 </Typography>
                                 {/* Связаться с нами */}
-                            </Button>
+                            {/* </Button> */}
                         </div>
                     </div>
                     <img
                         src='../static/mainIMG.jpeg'
                         className={classes.mainImg}
                     />
-                    <div className={classes.mainInfo}></div>
+                    <div className={classes.mainInfo}>
+                        <div className={classes.info}>
+                            <Typography style={{ opacity: 0.8 }} variant='h4'>
+                                Поможем воплотить идеи в реальность
+                            </Typography>
+                            <hr className={classes.hr} />
+                            <Typography
+                                className={classes.textInfo}
+                                variant='subtitle2'
+                            >
+                                Полный цикл производства и услуг.
+                            </Typography>
+                            <Typography
+                                className={classes.textInfo}
+                                variant='subtitle2'
+                            >
+                                Более 20 лет на рынке!
+                            </Typography>
+                            <Typography
+                                className={classes.textInfo}
+                                variant='subtitle2'
+                            >
+                                Гарантия год!
+                            </Typography>
+                        </div>
+                    </div>
                     <div className={classes.secondaryImgContainer}>
                         <img
                             src='../static/mainTable.jpeg'
