@@ -4,6 +4,7 @@ import { Button, Typography } from "@material-ui/core";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 // import Heading from "../static/heading.png";
+import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -11,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginTop: "50vh",
+        marginTop: "30vh",
         flexDirection: "column",
         [theme.breakpoints.down("md")]: {
             margin: "5%",
@@ -92,16 +93,17 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     img: {
-        width: "20%",
-        height: "40%",
-        margin: "3% 3%",
+        // width: "20%",
+        // height: "40%",
+        margin: "1%",
         [theme.breakpoints.down("md")]: {
-            width: "30%",
+            // width: "30%",
         },
     },
     sliderItems: {
         display: "flex",
         justifyContent: "center",
+        // alignItems: '',
         flexWrap: "wrap",
 
         height: "100%",
@@ -218,223 +220,409 @@ export default function ButtonAppBar() {
                 </Button> */}
                 {les && (
                     <div className={classes.sliderItems}>
-                        <img
-                            className={classes.img}
-                            src='../static/mainIMG.jpeg'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/01082011273.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/01082011275.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/01102014843.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/100_2119.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/100_2122.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/mainIMG.jpeg'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/01082011273.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/01082011275.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/P1030999.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/P1030999.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/04092014830.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/26092012559.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/04092014830.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/DSC01270.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/26092012559.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/DSC01270.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/DSC01222.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/DSC01222.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/DSC01248.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/DSC01248.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/17122014866.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-35-18.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/DSC00192.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/DSC00162.JPG'
-                        />
-                        {/* <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-31-29.JPG'
-                        /> */}
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-33-03.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-33-38.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-34-35.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-34-39.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-32-04.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-40-39.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-36-26.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-40-57.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-33-31.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-41-32.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-41-41.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-35-18.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/stairs/buk.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-33-03.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/stairs/084.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/stairs/105.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/stairs/01102014843.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/stairs/100_2119.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/stairs/100_2122.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/stairs/17122014866.JPG'
+                            />
+                        </div>
 
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-39-03.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-40-39.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-40-57.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-41-32.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/photo_2021-01-05_18-41-41.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/buk.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/084.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/stairs/105.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/stairs/DSC00192.JPG'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/stairs/DSC00162.JPG'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-33-38.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-34-35.JPG'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-34-39.JPG'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-32-04.JPG'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"300px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-36-26.JPG'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"300px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-33-31.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"550px"}
+                                className={classes.img}
+                                src='/static/stairs/photo_2021-01-05_18-39-03.JPG'
+                            />
+                        </div>
                     </div>
                 )}
 
                 {kitchen && (
                     <div className={classes.sliderItems}>
-                        <img
-                            className={classes.img}
-                            src='../static/kitchen/4.jpg'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/kitchen/2.jpeg'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/kitchen/1.jpeg'
-                        />
-
-                        <img
-                            className={classes.img}
-                            src='../static/kitchen/3.jpeg'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"300px"}
+                                className={classes.img}
+                                src='/static/kitchen/4.jpg'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"300px"}
+                                className={classes.img}
+                                src='/static/kitchen/2.jpeg'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"300px"}
+                                className={classes.img}
+                                src='/static/kitchen/1.jpeg'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"300px"}
+                                className={classes.img}
+                                src='/static/kitchen/3.jpeg'
+                            />
+                        </div>
                     </div>
                 )}
 
                 {other && (
                     <div className={classes.sliderItems}>
-                        <img
-                            className={classes.img}
-                            src='../static/furniture/4.jpeg'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/furniture/5.jpeg'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/furniture/6.jpeg'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/furniture/1.jpg'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/furniture/2.jpg'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/furniture/3.jpg'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/static/furniture/4.jpeg'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/static/furniture/5.jpeg'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/static/furniture/6.jpeg'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/static/furniture/1.jpg'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/furniture/2.jpg'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/static/furniture/3.jpg'
+                            />
+                        </div>
                     </div>
                 )}
 
                 {floor && (
                     <div className={classes.sliderItems}>
-                        <img
-                            className={classes.img}
-                            src='../static/floor/1.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/floor/2.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/floor/3.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/floor/4.JPG'
-                        />
-                        <img
-                            className={classes.img}
-                            src='../static/floor/5.JPG'
-                        />
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/static/floor/1.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/static/floor/2.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/static/floor/3.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/static/floor/4.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/static/floor/5.JPG'
+                            />
+                        </div>
                     </div>
                 )}
 

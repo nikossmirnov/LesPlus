@@ -100,7 +100,6 @@ const DialogActions = withStyles((theme) => ({
 export default function CustomizedDialogs({ title, style }) {
     console.log(title);
     const [open, setOpen] = React.useState(false);
-    init("user_oHsSoeZSR0bCDigKvVYe7");
 
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
@@ -119,6 +118,7 @@ export default function CustomizedDialogs({ title, style }) {
     };
     const handleClose = () => {
         setOpen(false);
+        init("user_oHsSoeZSR0bCDigKvVYe7");
 
         emailjs.send("service_z3c98r8", "template_6mhrn4n", data).then(
             function (response) {

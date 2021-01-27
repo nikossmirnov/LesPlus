@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Typography, useMediaQuery } from "@material-ui/core";
 import { Link } from "react-scroll";
+import Image from "next/image";
 
 import Modal from "../components/Modal";
 
@@ -35,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
     logoImg: {
         width: "25%",
         height: "15%",
+        marginLeft: "5%",
         [theme.breakpoints.down("md")]: {
             display: "none",
         },
@@ -51,15 +53,18 @@ const useStyles = makeStyles((theme) => ({
     },
     secondaryImg: {
         position: "absolute",
+        marginLeft: "-27%",
+        marginTop: "-12%",
         borderRadius: "5px",
-        marginLeft: "-25%",
+        // marginLeft: "-25%",
         width: 450,
         height: 350,
         [theme.breakpoints.down("md")]: {
             display: "none",
         },
         [theme.breakpoints.down("lg")]: {
-            marginLeft: "-33%",
+            marginLeft: "-37%",
+            marginTop: "-10%",
         },
     },
     secondaryImgContainer: {},
@@ -80,11 +85,13 @@ const useStyles = makeStyles((theme) => ({
     },
     contactInfo: {
         fontFamily: "Bodoni Moda",
-        width: "650px",
+        width: "auto",
         position: "absolute",
         display: "flex",
         justifyContent: "flex-end",
         marginTop: "1%",
+        zIndex: 1,
+        marginLeft: "17%",
         [theme.breakpoints.down("md")]: {
             display: "none",
         },
@@ -102,8 +109,8 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        width: "35%",
-        marginRight: "5%",
+        // width: "35%",
+        // marginRight: "5%",
     },
 
     number: {
@@ -159,8 +166,8 @@ const useStyles = makeStyles((theme) => ({
         width: 500,
         background: "#B48D6E",
         position: "absolute",
-        marginTop: "-5%",
-        marginLeft: "-3%",
+        marginTop: "-15%",
+        marginLeft: "-7%",
         borderRadius: "5px",
         [theme.breakpoints.down("md")]: {
             display: "none",
@@ -198,14 +205,20 @@ export default function ButtonAppBar() {
             <div className={classes.main}>
                 <div className={classes.logo}>
                     <img
-                        src='../static/logo_transparent.png'
+                        // width={"80px"}
+                        // height={"200px"}
+                        src='/../static/logo_transparent.png'
                         className={classes.logoImg}
                     />
                     <div className={classes.contactInfoMob}>
-                        <img
-                            src='../static/logo_transparent.png'
-                            className={classes.logoImgMob}
-                        />
+                        <div className={classes.logoImgMob}>
+                            <Image
+                                width={"100px"}
+                                height={"100px"}
+                                src='/static/logo_transparent.png'
+                            />
+                        </div>
+
                         <div className={classes.contact}>
                             <Typography
                                 variant='h5'
@@ -271,24 +284,18 @@ export default function ButtonAppBar() {
                                 title={"Связаться с нами"}
                                 style={{
                                     backgroundColor: "black",
+                                    border: "1px solid black",
                                 }}
                             />
-
-                            {/* <Button className={classes.btnMain}>
-                                <Typography
-                                    className={classes.textBtn}
-                                    variant='subtitle2'
-                                >
-                                    Связаться с нами
-                                </Typography>
-                                {/* Связаться с нами */}
-                            {/* </Button> */}
                         </div>
                     </div>
-                    <img
-                        src='../static/mainIMG.jpeg'
-                        className={classes.mainImg}
-                    />
+                    <div className={classes.mainImg}>
+                        <Image
+                            src='/static/mainIMG.jpeg'
+                            width={"1100px"}
+                            height={"1600px"}
+                        />
+                    </div>
                     <div className={classes.mainInfo}>
                         <div className={classes.info}>
                             <Typography style={{ opacity: 0.8 }} variant='h4'>
@@ -316,10 +323,13 @@ export default function ButtonAppBar() {
                         </div>
                     </div>
                     <div className={classes.secondaryImgContainer}>
-                        <img
-                            src='../static/mainTable.jpeg'
-                            className={classes.secondaryImg}
-                        />
+                        <div className={classes.secondaryImg}>
+                            <Image
+                                width={"500px"}
+                                height={"400px"}
+                                src='/static/mainTable.jpeg'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
