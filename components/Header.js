@@ -207,7 +207,7 @@ export default function ButtonAppBar() {
                     <img
                         // width={"80px"}
                         // height={"200px"}
-                        src='/public/logo_transparent.png'
+                        src='/logo_transparent.png'
                         className={classes.logoImg}
                     />
                     <div className={classes.contactInfoMob}>
@@ -215,7 +215,7 @@ export default function ButtonAppBar() {
                             <Image
                                 width={"100px"}
                                 height={"100px"}
-                                src='/public/logo_transparent.png'
+                                src='/logo_transparent.png'
                             />
                         </div>
 
@@ -291,7 +291,7 @@ export default function ButtonAppBar() {
                     </div>
                     <div className={classes.mainImg}>
                         <Image
-                            src='/public/mainIMG.jpeg'
+                            src='/mainIMG.jpeg'
                             width={"1100px"}
                             height={"1600px"}
                         />
@@ -327,7 +327,7 @@ export default function ButtonAppBar() {
                             <Image
                                 width={"500px"}
                                 height={"400px"}
-                                src='/public/mainTable.jpeg'
+                                src='/mainTable.jpeg'
                             />
                         </div>
                     </div>
