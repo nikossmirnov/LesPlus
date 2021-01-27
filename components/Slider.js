@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Button, Typography } from "@material-ui/core";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-// import Heading from "../static/heading.png";
+// import Heading from "../public/heading.png";
 import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
@@ -167,7 +167,7 @@ export default function ButtonAppBar() {
                     Гарантия год!
                 </Typography>
                 <img
-                    src='../static/logo_transparent.png'
+                    src='../public/logo_transparent.png'
                     alt='heading'
                     className={classes.headingLogo}
                 />
@@ -225,7 +225,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/mainIMG.jpeg'
+                                src='/public/mainIMG.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -233,7 +233,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/01082011273.JPG'
+                                src='/public/stairs/01082011273.JPG'
                             />
                         </div>
                         <div className={classes.img}>
@@ -241,16 +241,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/01082011275.JPG'
-                            />
-                        </div>
-
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"450px"}
-                                className={classes.img}
-                                src='/static/stairs/P1030999.JPG'
+                                src='/public/stairs/01082011275.JPG'
                             />
                         </div>
 
@@ -259,7 +250,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/04092014830.JPG'
+                                src='/public/stairs/P1030999.JPG'
                             />
                         </div>
 
@@ -268,15 +259,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/26092012559.JPG'
-                            />
-                        </div>
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"450px"}
-                                className={classes.img}
-                                src='/static/stairs/DSC01270.JPG'
+                                src='/public/stairs/04092014830.JPG'
                             />
                         </div>
 
@@ -285,7 +268,15 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/DSC01222.JPG'
+                                src='/public/stairs/26092012559.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/public/stairs/DSC01270.JPG'
                             />
                         </div>
 
@@ -294,7 +285,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/DSC01248.JPG'
+                                src='/public/stairs/DSC01222.JPG'
                             />
                         </div>
 
@@ -303,7 +294,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-35-18.JPG'
+                                src='/public/stairs/DSC01248.JPG'
                             />
                         </div>
 
@@ -312,7 +303,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-33-03.JPG'
+                                src='/public/stairs/photo_2021-01-05_18-35-18.JPG'
                             />
                         </div>
 
@@ -321,7 +312,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-40-39.JPG'
+                                src='/public/stairs/photo_2021-01-05_18-33-03.JPG'
                             />
                         </div>
 
@@ -330,7 +321,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-40-57.JPG'
+                                src='/public/stairs/photo_2021-01-05_18-40-39.JPG'
                             />
                         </div>
 
@@ -339,7 +330,16 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-41-32.JPG'
+                                src='/public/stairs/photo_2021-01-05_18-40-57.JPG'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/public/stairs/photo_2021-01-05_18-41-32.JPG'
                             />
                         </div>
                         <div className={classes.img}>
@@ -347,16 +347,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"350px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-41-41.JPG'
-                            />
-                        </div>
-
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"350px"}
-                                className={classes.img}
-                                src='/static/stairs/buk.JPG'
+                                src='/public/stairs/photo_2021-01-05_18-41-41.JPG'
                             />
                         </div>
 
@@ -365,47 +356,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"350px"}
                                 className={classes.img}
-                                src='/static/stairs/084.JPG'
-                            />
-                        </div>
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"350px"}
-                                className={classes.img}
-                                src='/static/stairs/105.JPG'
-                            />
-                        </div>
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"350px"}
-                                className={classes.img}
-                                src='/static/stairs/01102014843.JPG'
-                            />
-                        </div>
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"350px"}
-                                className={classes.img}
-                                src='/static/stairs/100_2119.JPG'
-                            />
-                        </div>
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"350px"}
-                                className={classes.img}
-                                src='/static/stairs/100_2122.JPG'
-                            />
-                        </div>
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"350px"}
-                                className={classes.img}
-                                src='/static/stairs/17122014866.JPG'
+                                src='/public/stairs/buk.JPG'
                             />
                         </div>
 
@@ -414,7 +365,47 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"350px"}
                                 className={classes.img}
-                                src='/static/stairs/DSC00192.JPG'
+                                src='/public/stairs/084.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/public/stairs/105.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/public/stairs/01102014843.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/public/stairs/100_2119.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/public/stairs/100_2122.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"350px"}
+                                className={classes.img}
+                                src='/public/stairs/17122014866.JPG'
                             />
                         </div>
 
@@ -423,24 +414,16 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"350px"}
                                 className={classes.img}
-                                src='/static/stairs/DSC00162.JPG'
+                                src='/public/stairs/DSC00192.JPG'
                             />
                         </div>
 
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"450px"}
+                                height={"350px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-33-38.JPG'
-                            />
-                        </div>
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"450px"}
-                                className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-34-35.JPG'
+                                src='/public/stairs/DSC00162.JPG'
                             />
                         </div>
 
@@ -449,7 +432,24 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-34-39.JPG'
+                                src='/public/stairs/photo_2021-01-05_18-33-38.JPG'
+                            />
+                        </div>
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/public/stairs/photo_2021-01-05_18-34-35.JPG'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"450px"}
+                                className={classes.img}
+                                src='/public/stairs/photo_2021-01-05_18-34-39.JPG'
                             />
                         </div>
 
@@ -458,7 +458,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"250px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-32-04.JPG'
+                                src='/public/stairs/photo_2021-01-05_18-32-04.JPG'
                             />
                         </div>
 
@@ -467,7 +467,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"300px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-36-26.JPG'
+                                src='/public/stairs/photo_2021-01-05_18-36-26.JPG'
                             />
                         </div>
 
@@ -476,7 +476,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"300px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-33-31.JPG'
+                                src='/public/stairs/photo_2021-01-05_18-33-31.JPG'
                             />
                         </div>
                         <div className={classes.img}>
@@ -484,7 +484,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"550px"}
                                 className={classes.img}
-                                src='/static/stairs/photo_2021-01-05_18-39-03.JPG'
+                                src='/public/stairs/photo_2021-01-05_18-39-03.JPG'
                             />
                         </div>
                     </div>
@@ -497,7 +497,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"300px"}
                                 className={classes.img}
-                                src='/static/kitchen/4.jpg'
+                                src='/public/kitchen/4.jpg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -505,7 +505,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"300px"}
                                 className={classes.img}
-                                src='/static/kitchen/2.jpeg'
+                                src='/public/kitchen/2.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -513,7 +513,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"300px"}
                                 className={classes.img}
-                                src='/static/kitchen/1.jpeg'
+                                src='/public/kitchen/1.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -521,7 +521,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"300px"}
                                 className={classes.img}
-                                src='/static/kitchen/3.jpeg'
+                                src='/public/kitchen/3.jpeg'
                             />
                         </div>
                     </div>
@@ -534,7 +534,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"250px"}
                                 className={classes.img}
-                                src='/static/furniture/4.jpeg'
+                                src='/public/furniture/4.jpeg'
                             />
                         </div>
 
@@ -543,7 +543,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"250px"}
                                 className={classes.img}
-                                src='/static/furniture/5.jpeg'
+                                src='/public/furniture/5.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -551,7 +551,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"250px"}
                                 className={classes.img}
-                                src='/static/furniture/6.jpeg'
+                                src='/public/furniture/6.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -559,7 +559,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"250px"}
                                 className={classes.img}
-                                src='/static/furniture/1.jpg'
+                                src='/public/furniture/1.jpg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -567,7 +567,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"350px"}
                                 className={classes.img}
-                                src='/static/furniture/2.jpg'
+                                src='/public/furniture/2.jpg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -575,7 +575,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"350px"}
                                 className={classes.img}
-                                src='/static/furniture/3.jpg'
+                                src='/public/furniture/3.jpg'
                             />
                         </div>
                     </div>
@@ -588,7 +588,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"250px"}
                                 className={classes.img}
-                                src='/static/floor/1.JPG'
+                                src='/public/floor/1.JPG'
                             />
                         </div>
                         <div className={classes.img}>
@@ -596,7 +596,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"250px"}
                                 className={classes.img}
-                                src='/static/floor/2.JPG'
+                                src='/public/floor/2.JPG'
                             />
                         </div>
                         <div className={classes.img}>
@@ -604,7 +604,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"250px"}
                                 className={classes.img}
-                                src='/static/floor/3.JPG'
+                                src='/public/floor/3.JPG'
                             />
                         </div>
                         <div className={classes.img}>
@@ -612,7 +612,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"250px"}
                                 className={classes.img}
-                                src='/static/floor/4.JPG'
+                                src='/public/floor/4.JPG'
                             />
                         </div>
                         <div className={classes.img}>
@@ -620,7 +620,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"250px"}
                                 className={classes.img}
-                                src='/static/floor/5.JPG'
+                                src='/public/floor/5.JPG'
                             />
                         </div>
                     </div>
