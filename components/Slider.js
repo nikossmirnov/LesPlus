@@ -233,7 +233,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/01082011273.JPG'
+                                src='/p1.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -241,7 +241,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/01082011275.JPG'
+                                src='/p2.jpeg'
                             />
                         </div>
 
@@ -259,7 +259,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/04092014830.JPG'
+                                src='/p3.jpeg'
                             />
                         </div>
 
@@ -268,7 +268,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/26092012559.JPG'
+                                src='/p4.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -303,7 +303,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-35-18.JPG'
+                                src='/p5.jpeg'
                             />
                         </div>
 
@@ -312,7 +312,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-33-03.JPG'
+                                src='/p6.jpeg'
                             />
                         </div>
 
@@ -321,7 +321,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-40-39.JPG'
+                                src='/p7.jpeg'
                             />
                         </div>
 
@@ -330,7 +330,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-40-57.JPG'
+                                src='/p8.jpeg'
                             />
                         </div>
 
@@ -339,7 +339,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-41-32.JPG'
+                                src='/p9.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -347,7 +347,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"350px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-41-41.JPG'
+                                src='/p10.jpeg'
                             />
                         </div>
 
@@ -365,7 +365,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"350px"}
                                 className={classes.img}
-                                src='/084.JPG'
+                                src='/p11.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -373,7 +373,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"350px"}
                                 className={classes.img}
-                                src='/105.JPG'
+                                src='/p12.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -381,7 +381,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"350px"}
                                 className={classes.img}
-                                src='/01102014843.JPG'
+                                src='/p13.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -405,7 +405,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"350px"}
                                 className={classes.img}
-                                src='/17122014866.JPG'
+                                src='/p14.jpeg'
                             />
                         </div>
 
@@ -432,7 +432,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-33-38.JPG'
+                                src='/p15.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -440,7 +440,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-34-35.JPG'
+                                src='/p16.jpeg'
                             />
                         </div>
 
@@ -449,7 +449,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"450px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-34-39.JPG'
+                                src='/p17.jpeg'
                             />
                         </div>
 
@@ -458,7 +458,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"250px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-32-04.JPG'
+                                src='/p18.jpeg'
                             />
                         </div>
 
@@ -467,7 +467,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"300px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-36-26.JPG'
+                                src='/p19.jpeg'
                             />
                         </div>
 
@@ -476,7 +476,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"300px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-33-31.JPG'
+                                src='/p20.jpeg'
                             />
                         </div>
                         <div className={classes.img}>
@@ -484,7 +484,7 @@ export default function ButtonAppBar() {
                                 width={"350px"}
                                 height={"550px"}
                                 className={classes.img}
-                                src='/photo_2021-01-05_18-39-03.JPG'
+                                src='/p21.jpeg'
                             />
                         </div>
                     </div>

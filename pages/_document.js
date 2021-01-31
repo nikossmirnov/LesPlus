@@ -37,10 +37,10 @@ class MyDocument extends Document {
                         href='../static/favicon.ico'
                     />
                     <style>{`body { margin: 0 } /* custom! */`}</style>
-                    <meta
+                    {/* <meta
                         name='viewport'
                         content='width=device-width, initial-scale=1.0'
-                    />
+                    /> */}
                 </Head>
                 <body className='custom_class'>
                     <Main />
