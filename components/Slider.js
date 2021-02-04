@@ -345,7 +345,7 @@ export default function ButtonAppBar() {
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"350px"}
+                                height={"300px"}
                                 className={classes.img}
                                 src='/p10.jpeg'
                             />
@@ -354,7 +354,7 @@ export default function ButtonAppBar() {
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"350px"}
+                                height={"500px"}
                                 className={classes.img}
                                 src='/buk.JPG'
                             />
@@ -379,7 +379,7 @@ export default function ButtonAppBar() {
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"350px"}
+                                height={"250px"}
                                 className={classes.img}
                                 src='/p13.jpeg'
                             />
@@ -387,7 +387,7 @@ export default function ButtonAppBar() {
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"350px"}
+                                height={"300px"}
                                 className={classes.img}
                                 src='/100_2119.JPG'
                             />
@@ -395,7 +395,7 @@ export default function ButtonAppBar() {
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"350px"}
+                                height={"250px"}
                                 className={classes.img}
                                 src='/100_2122.JPG'
                             />
@@ -403,7 +403,7 @@ export default function ButtonAppBar() {
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"350px"}
+                                height={"250px"}
                                 className={classes.img}
                                 src='/p14.jpeg'
                             />
@@ -412,7 +412,7 @@ export default function ButtonAppBar() {
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"350px"}
+                                height={"250px"}
                                 className={classes.img}
                                 src='/DSC00192.JPG'
                             />
@@ -421,7 +421,7 @@ export default function ButtonAppBar() {
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"350px"}
+                                height={"250px"}
                                 className={classes.img}
                                 src='/DSC00162.JPG'
                             />
@@ -430,7 +430,7 @@ export default function ButtonAppBar() {
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"450px"}
+                                height={"550px"}
                                 className={classes.img}
                                 src='/p15.jpeg'
                             />
@@ -447,9 +447,36 @@ export default function ButtonAppBar() {
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"450px"}
+                                height={"500px"}
                                 className={classes.img}
                                 src='/p17.jpeg'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"550px"}
+                                className={classes.img}
+                                src='/p21.jpeg'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/p19.jpeg'
+                            />
+                        </div>
+
+                        <div className={classes.img}>
+                            <Image
+                                width={"350px"}
+                                height={"250px"}
+                                className={classes.img}
+                                src='/p20.jpeg'
                             />
                         </div>
 
@@ -459,32 +486,6 @@ export default function ButtonAppBar() {
                                 height={"250px"}
                                 className={classes.img}
                                 src='/p18.jpeg'
-                            />
-                        </div>
-
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"300px"}
-                                className={classes.img}
-                                src='/p19.jpeg'
-                            />
-                        </div>
-
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"300px"}
-                                className={classes.img}
-                                src='/p20.jpeg'
-                            />
-                        </div>
-                        <div className={classes.img}>
-                            <Image
-                                width={"350px"}
-                                height={"550px"}
-                                className={classes.img}
-                                src='/p21.jpeg'
                             />
                         </div>
                     </div>
