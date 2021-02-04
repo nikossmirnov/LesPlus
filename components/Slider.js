@@ -465,7 +465,7 @@ export default function ButtonAppBar() {
                         <div className={classes.img}>
                             <Image
                                 width={"350px"}
-                                height={"250px"}
+                                height={"200px"}
                                 className={classes.img}
                                 src='/p19.jpeg'
                             />
